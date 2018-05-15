@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ang4-seo": {
+    "angular-ssr-starter": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ang4-seo",
+            "outputPath": "dist/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ang4-seo:build"
+            "browserTarget": "angular-ssr-starter:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ang4-seo:build:production"
+              "browserTarget": "angular-ssr-starter:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ang4-seo:build"
+            "browserTarget": "angular-ssr-starter:build"
           }
         },
         "test": {
@@ -92,10 +92,18 @@
               "**/node_modules/**"
             ]
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/server",
+            "main": "src/main.server.ts",
+            "tsConfig": "src/tsconfig.server.json"
+          }
         }
       }
     },
-    "ang4-seo-e2e": {
+    "angular-ssr-starter-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,7 +111,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ang4-seo:serve"
+            "devServerTarget": "angular-ssr-starter:serve"
           }
         },
         "lint": {
@@ -118,5 +126,5 @@
       }
     }
   },
-  "defaultProject": "ang4-seo"
+  "defaultProject": "angular-ssr-starter"
 }
