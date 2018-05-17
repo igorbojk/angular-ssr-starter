@@ -1,6 +1,14 @@
-# Ang4Seo
+# Angular5 Server Side Rendering
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+
+## Starter on bootstrap4 library
+
+Application include bootstrap4 library
+
+## Server Side Rendering server
+
+Run `npm run start:ssr`. Navigate to `http://localhost:4000/`
 
 ## Development server
 
