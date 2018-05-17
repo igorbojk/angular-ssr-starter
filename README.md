@@ -2,9 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
-## Starter on bootstrap4 library
+## Frameworks and libraries
 
-Application include bootstrap4 library
+- bootstrap4
+- scss preprocessor
 
 ## Server Side Rendering server
 
