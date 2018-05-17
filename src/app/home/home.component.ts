@@ -3,11 +3,11 @@ import { Meta, Title } from "@angular/platform-browser";
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
 
-  constructor(meta: Meta, title: Title) { 
+  constructor(meta: Meta, title: Title) {
    title.setTitle('Home Page Title');
 
     meta.addTags([

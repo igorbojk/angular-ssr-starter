@@ -4,11 +4,11 @@ import { Meta, Title } from "@angular/platform-browser";
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
 	dogs: any;
-  constructor(private http: HttpClient, meta: Meta, title: Title) { 
+  constructor(private http: HttpClient, meta: Meta, title: Title) {
    title.setTitle('About Page Title');
 
     meta.addTags([

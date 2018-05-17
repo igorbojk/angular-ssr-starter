@@ -15,7 +15,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'ang4-seo' }),
+    BrowserModule.withServerTransition({ appId: 'angular-ssr-starter' }),
     AppRoutingModule,
     HttpClientModule,
     NgbModule.forRoot()
